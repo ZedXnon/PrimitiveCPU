@@ -9,7 +9,7 @@ BIN := cpu_sim
 
 # Compiler settings
 CC := gcc
-CFLAGS := -Wall -Wextra -I$(INC_DIR)
+CFLAGS := -Wall -Wextra -Werror -I$(INC_DIR)
 
 # Find all source files recursively
 SRC_FILES := $(shell find $(SRC_DIR) -name "*.c")
